@@ -32,6 +32,7 @@ dependencies {
     implementation platform('software.amazon.awssdk:bom:2.30.28')
     implementation 'software.amazon.awssdk:dynamodb'
     implementation 'software.amazon.awssdk:dynamodb-enhanced'
+    implementation 'software.amazon.awssdk:eventbridge:2.30.33'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.cloud:spring-cloud-function-web'
     compileOnly 'org.projectlombok:lombok'
@@ -44,6 +45,7 @@ dependencies {
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     implementation 'com.amazonaws:aws-lambda-java-core:1.2.2'
     implementation 'com.amazonaws:aws-lambda-java-events:3.11.1'
+    implementation 'io.vavr:vavr:0.10.6'
 }
 
 dependencyManagement {
